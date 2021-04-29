@@ -1,5 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import {Button, Switch} from 'antd'
+import './Counter.css'
 
 class Counter extends React.Component {
     
@@ -37,8 +39,9 @@ class Counter extends React.Component {
                 <div className="Part1">
                 <h1>Part 1</h1>
                 <div className='ml-5'>{this.state.counter}</div>
-                <button className='btn btn-primary ml-5' onClick={this.counterIncremental}>Increaser</button>
-                <button className='btn btn-secondary ml-5' onClick={this.counterDecremental}>Decreaser</button>
+                <Button type="primary" className='ml-5' onClick={this.counterIncremental}>Increaser</Button>
+                <Button type="ghost" className='ml-5' onClick={this.counterDecremental}>Decreaser</Button>
+                <Switch></Switch>
                 </div>
                 <div className="Part2">
                     <h1>Part 2</h1>
